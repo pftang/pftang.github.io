@@ -1,0 +1,805 @@
+ <!--定义文档类型-->
+ <!DOCTYPE html>
+ <!--语言属性定义-->
+ <html lang="zh-CN" >
+ <!--定义文档的头部-->
+ <head>
+     <!--翻译类型为utf--->
+     <meta charset="utf-8" />
+     <title>Pftang主页</title>
+     <!--搜索定义--->
+     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+     <script type="text/javascript">
+      var mobileAgent = new Array("iphone", "ipod", "ipad", "android", "mobile", "blackberry", "webos", "incognito", "webmate", "bada", "nokia", "lg", "ucweb", "skyfire");
+      var browser = navigator.userAgent.toLowerCase();
+      var isMobile = false;
+      for (var i = 0; i < mobileAgent.length; i++) {
+          if (browser.indexOf(mobileAgent[i]) != -1) {
+              isMobile = true;
+              alert("pftang提示：本主页手机端浏览不适配，建议使用电脑访问效果最佳！点击确定继续使用手机浏览");
+              break;
+          }
+      }
+     </script>
+ 
+     <script src="static/js/html5shiv.js"></script>
+     <!--引用 CSS Files
+     ================================================== -->
+     <link href="static/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+     <link href="static/css/bootstrap-grid.min.css" rel="stylesheet" type="text/css" />
+     <link href="static/css/bootstrap-reboot.min.css" rel="stylesheet" type="text/css" />
+     <link href="static/css/animate.css" rel="stylesheet" type="text/css" />
+     <link href="static/css/owl.carousel.css" rel="stylesheet" type="text/css" />
+     <link href="static/css/owl.theme.css" rel="stylesheet" type="text/css" />
+     <link href="static/css/owl.transitions.css" rel="stylesheet" type="text/css" />
+     <link href="static/css/magnific-popup.css" rel="stylesheet" type="text/css" />
+     <link href="static/css/jquery.countdown.css" rel="stylesheet" type="text/css" />
+     <link href="static/css/style_2.css" rel="stylesheet" type="text/css" />
+     <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+ 
+     <!-- 颜色主题引用-->
+     <!-- stylesheet-外部加载的样表-->
+     <link id="colors" href="static/css/scheme-01.css" rel="stylesheet" type="text/css" />
+     <link href="static/css/coloring.css" rel="stylesheet" type="text/css" />
+ </head>
+ 
+ 
+ 
+ <body>
+ 
+     <div id="webapp">
+         <div class="page-overlay">
+             <div class="preloader-wrap">
+                 <div class="spinner">
+                     <div class="bounce1"></div>
+                     <div class="bounce2"></div>
+                     <div class="bounce3"></div>
+                 </div>
+             </div>
+         </div>
+ 
+         <!-- header begin -->
+ 
+         <header class="header-light transparent scroll-light">
+             <div class="container">
+                 <div class="row">
+                     <div class="col-md-12">
+                         <div class="d-flex justify-content-between">
+                             <div class="align-self-center header-col-left">
+                                 <!-- logo begin -->
+                                 <div id="logo">
+                                     <a href="index.html">
+                                        Pftang
+                                     </a>
+                                 </div>
+                                 <!-- logo close -->
+                             </div>
+                             <div class="align-self-center ml-auto header-col-mid">
+                                 <!-- mainmenu begin -->
+                                 <ul id="mainmenu" class="scrollnav">
+                                     <li><a href="#section-index" style="color:lightseagreen" class="active" @click="click1()">主页</a></li>
+                                     <li></li>
+                                     <li ><a href="#section-about" style="color:lightseagreen" @click="click2()">个人简介</a></li>
+                                     <li></li>
+                                     <li><a href="#section-skill" style="color:lightseagreen" @click="click3()">个人技能</a></li>
+                                     <li></li>
+                                     <li><a href="#section-career" style="color:lightseagreen" @click="click4()">教育背景</a></li>
+                                     <li></li>
+                                     <li><a href="#section-experience" style="color:lightseagreen" @click="click5()">个人材料</a></li>
+                                     <li></li>
+                                     <li><a href="#section-contact" style="color:lightseagreen" @click="click6()">联系方式</a></li>
+                                     <li></li>
+                                     <li><a href="#section-life" style="color:lightseagreen" @click="click7()">生活相册</a></li>
+                                     <li></li>
+                                 </ul>
+ 
+                                 <!-- mainmenu close -->
+                             </div>
+                             <div class="align-self-center ml-auto header-col-right">
+                                 <div class="social-icons">
+                                     <a href="https://weixin.qq.com/"><i class="fa fa-weixin fa-lg"></i></a>
+                                     <a href="C:\Users\Public\Desktop"><i class="fa fa-qq fa-lg"></i></a>
+                                     <a href="https://weibo.com/"><i class="fa fa-weibo fa-lg"></i></a>
+                                     <a href="index.html"><i class="fa fa-home fa-lg"></i></a>
+                                 </div>
+ 
+                                 <span id="menu-btn"></span>
+                             </div>
+                             <div class="clearfix"></div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </header>
+ 
+         <!-- header close -->
+         <!-- 第一部分 -->
+         
+         <section  id="section-index" style="display:block;"class="vertical-center custom-1">
+             <div class="container">
+                 <div class="row">
+                     <div class="col-lg-8 mb-sm-12 text-center">
+                         <img class="img-fluid wow fadeInRight" src="static/images/background/1.jpeg" />
+                     </div>
+                     <div class="col-lg-4">
+                         <div class="spacer-single"></div>
+                         <div class="spacer-single"></div>
+                         <div class="spacer-single"></div>
+                         <div class="spacer-single"></div>
+                         <h1 align="center" style="color:lightseagreen"  class="wow fadeInUp text-center" data-wow-delay=".5s">     Hello ！  </h1>
+                         <div class="spacer-single"></div>
+                         <p class="lead wow fadeInUp" align="center" data-wow-delay=".75s">  我是Pftang，欢迎访问我的个人主页！！</p>
+                         <div class="spacer-single"></div>
+                         <a class=" btn-custom scroll-to wow fadeInUp" style="position:relative;left:120px;top:30px" data-wow-delay=".5s" @click="click2()">About Me</a>
+                     </div>
+                 </div>
+             </div>
+         </section>
+ 
+ 
+         <section  id="section-about" style="display:none;">
+             <div class="container">
+                 <div class="row align-items-center">
+                     <div class="col-lg-6 mb-sm-30 text-center">
+                         <div class="de-images">
+                             <img class="img-fluid wow fadeInRight" src="static/picture/0.jpg" alt="" />
+                         </div>
+                     </div>
+ 
+                     <div class="col-lg-6 offset-md-0 wow fadeInLeft" data-wow-delay=".5s">
+                         <h2>About <span class="id-color">Me</span></h2>
+                         <p style="text-indent:2em ;text-align:justify">
+                             本科和硕士毕业于贵州大学机械工程学院，研究方向为多轴3D打印路径规划、4D打印智能结构逆向建模及计算机计算算法。个人兴趣爱好是游泳和DIY，喜欢研究自动化控制及计算机辅助制造。在论文发表方面，目前已发表3篇 EI 论文，在《华南理工大学学报自然科学版》2021年第3期发表论文<a href="https://kns.cnki.net/kcms/detail/detail.aspx?dbcode=CJFD&dbname=CJFDLAST2021&filename=HNLG202103005&uniplatform=NZKPT&v=0yhiufFfggFGWWRaubAKDqSN3HYDfd0iLXu_dp-3pDxM_YmFUX-IqusfdUdo9sVE" style="color:lightseagreen">《<u>4D 打印技术研究与应用进展</u>》(点击可查看)</a>，
+                             在《复合材料学报》2021 年第6期发表论文<a href="https://kns.cnki.net/kcms/detail/detail.aspx?dbcode=CJFD&dbname=CJFDLAST2021&filename=FUHE202106002&uniplatform=NZKPT&v=HRuPfJbSla9g338U4ynMQhbApE-jiNhpTfvUwGCdaiUzI5OfFfaQy1R-UecVAse1" style="color:lightseagreen">《<u>4D打印复合软材料力学性能研究进展</u>》</a>，论文<a href="https://kns.cnki.net/kcms/detail/detail.aspx?dbcode=CAPJ&dbname=CAPJLAST&filename=JSJJ2021112600C&uniplatform=NZKPT&v=EfDktvpY4SBYyATtYGZewrZuwOrK04pi61LOVv3ZWVTQJov5qw3xFGXaImORURQ5" style="color:lightseagreen">《<u>多轴3D打印技术研究进展</u>》</a>已被计算机集成制造系统期刊网络首发。
+                             发表SCI论文1篇，在中科院3区期刊<i>The International Journal of Advanced Manufacturing Technology</i>期刊发表论文<a href="https://doi.org/10.1007/s00170-023-11267-7" style="color:lightseagreen">《<u>A non‑supporting printing algorithm for fused filament fabrication of multi‑branch structure</u>》</a>。已授权实用新型专利<a href="https://kns.cnki.net/kcms/detail/detail.aspx?dbcode=SCPD&dbname=SCPD202101&filename=CN212446328U&uniplatform=NZKPT&v=LCMMavq10tHlbB03KasrmQja29-wVBmYZQawBD1mPQL-Ebwk9ZJM-LOT9OuhIhnA" style="color:lightseagreen">《<u>一种能简化建模过程的3D打印装置</u>》</a>、
+                             <a href="https://kns.cnki.net/kcms/detail/detail.aspx?dbcode=SCPD&dbname=SCPD202101&filename=CN212446327U&uniplatform=NZKPT&v=LCMMavq10tEB2bnJ97ilToX7EFg9I-z_alwrymiQh7JDQXHXYsf19cY-GSZTGLV6" style="color:lightseagreen">《<u>一种能简化建模过程的3D打印装置用工作台</u>》</a>、<a href="https://kns.cnki.net/kcms/detail/detail.aspx?dbcode=SCPD&dbname=SCPD202002&filename=CN211401141U&uniplatform=NZKPT&v=1ZN35Uf18KZXGVb6vEjvwGPmpx8gYDrYrVDuB3zWhPUWnQr_AtxyOtyoiQ91Pw5F" style="color:lightseagreen">《<u>一种立铣刀刀径测量装置</u>》</a>3项，
+                             3项发明专利<a href="https://kns.cnki.net/kcms/detail/detail.aspx?dbcode=SCPD&dbname=SCPD202101&filename=CN111941832A&uniplatform=NZKPT&v=99JaxR-TEqM-R8Aty-KNHE3rULk9hfgvFn5hX5hKZXxH9zeKiR-HolDh-Z8QChtK" style="color:lightseagreen">《<u>一种五轴熔融沉积3D打印机</u>》</a>、<a href="https://kns.cnki.net/kcms/detail/detail.aspx?dbcode=SCPD&dbname=SCPD202101&filename=CN111941831A&uniplatform=NZKPT&v=99JaxR-TEqPi6YBQp9_H7lAX1CgruP8_mb45jUEtr04T_Gc-YPq_n6mCSiSB_J2l" style="color:lightseagreen">《<u>一种五轴熔融沉积3D打印机用工作台组件</u>》</a>、
+                             <a href="https://kns.cnki.net/kcms/detail/detail.aspx?dbcode=SCPD&dbname=SCPD202001&filename=CN111121700A&uniplatform=NZKPT&v=cCj60hFSlLRVdpdTmZHICsucArq-vRMoPXXJYBTIQC-lR7gk4kaSDg15nKCPUgxl" style="color:lightseagreen">《<u>一种立铣刀刀径自动测量仪</u>》</a>在实质审查阶段。
+                         </p>
+ 
+                     </div>
+                 </div>
+                 <div class="row">
+                     <p></p>
+                 </div>
+ 
+                 <div class="row">
+ 
+                     <div class="col-lg-2  offset-lg-1 mb30 wow fadeInRight">
+                         <a class=" btn-custom scroll-to wow fadeInUp" data-wow-delay=".5s" @click="click1()">首页</a>
+                     </div>
+ 
+                     <div class="col-lg-2  offset-lg-5 mb30 wow fadeInRight">
+                         <a class=" btn-custom scroll-to wow fadeInUp" data-wow-delay=".5s" @click="click3()">个人技能</a>
+                     </div>
+                 </div>
+             </div>
+         </section>
+ 
+     
+         <section  id="section-skill"  style="display:none;" class="text-light" data-bgcolor="#008477">
+             <div class="container">
+                 <div class="row">
+                     <div class="col-lg-6 offset-lg-3">
+                         <div class="text-center">
+                             <h2>个人技能</h2>
+                             <p></p>
+                             <p><font size="5">目前掌握的专业技能包括以下几个方面:</font></p>
+                             <div class="spacer-30"></div>
+                         </div>
+                     </div>
+                 </div>
+ 
+                 <div class="row">
+                     <div class="col-lg-6 col-md-6 mb30 wow fadeInRight" data-wow-delay="0s">
+                         <div class="f-box f-icon-left f-icon-circle f-border">
+                             <i class="fa fa-language id-color"></i>
+                             <div class="fb-text">
+                                 <p></p>
+                                 <h4>掌握的计算机语言</h4>
+                                 <p>熟悉C/C++、Java、HTML、JavaScript、SQL等编程语言。</p>
+                             </div>
+                         </div>
+                     </div>
+ 
+                     <div class="col-lg-6 col-md-6 mb30 wow fadeInRight" data-wow-delay=".25s">
+                         <div class="f-box f-icon-left f-icon-circle f-border">
+                             <i class="fa fa-cogs id-color"></i>
+                             <div class="fb-text">
+                                 <p></p>
+                                 <h4>熟悉的开发框架</h4>
+                                 <p>熟悉SSM(Spring+Spring MVC+MyBatis)、Springboot+Vue、Express等框架。</p>
+                             </div>
+                         </div>
+                     </div>
+ 
+                     <div class="col-lg-6 col-md-6 mb30 wow fadeInRight" data-wow-delay="0s">
+                         <div class="f-box f-icon-left f-icon-circle f-border">
+                             <i class="fa  fa-pencil-square-o id-color"></i>
+                             <div class="fb-text">
+                                 <p></p>
+                                 <h4>常用的开发工具</h4>
+                                 <p>常用的开发工具有QT、VisualStudio、Keil、Node.js、IDEA、VSCode。</p>
+                             </div>
+                         </div>
+                     </div>
+ 
+                     <div class="col-lg-6 col-md-6 mb30 wow fadeInRight" data-wow-delay="0s">
+                         <div class="f-box f-icon-left f-icon-circle f-border">
+                             <i class="fa fa-linux id-color"></i>
+                             <div class="fb-text">
+                                 <p></p>
+                                 <h4>熟悉的操作系统</h4>
+                                 <p>熟悉Windows、Linux操作系统。</p>
+                             </div>
+                         </div>
+                     </div>
+ 
+                     <div class="col-lg-6 col-md-6 mb30 wow fadeInRight" data-wow-delay="0s">
+                         <div class="f-box f-icon-left f-icon-circle f-border">
+                             <i class="fa fa-microchip id-color"></i>
+                             <div class="fb-text">
+                                 <p></p>
+                                 <h4>熟悉的单片机</h4>
+                                 <p>熟悉STM32F10X系列和S51系列单片机。</p>
+                             </div>
+                         </div>
+                     </div>
+ 
+                     <div class="col-lg-6 col-md-6 mb30 wow fadeInRight" data-wow-delay=".25s">
+                         <div class="f-box f-icon-left f-icon-circle f-border">
+                             <i class="fa fa-windows id-color"></i>
+                             <div class="fb-text">
+                                 <p></p>
+                                 <h4>常用的工业软件</h4>
+                                 <p>熟练使用Solidwroks、Autocad、Abaqus等工程软件。</p>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+ 
+                 <div class="row">
+                     <p></p>
+                 </div>
+ 
+                 <div class="row">
+ 
+                     <div class="col-lg-2  offset-lg-1 mb30 wow fadeInRight">
+                         <a class=" btn-custom scroll-to wow fadeInUp" data-wow-delay=".5s" @click="click2()">个人简介</a>
+                     </div>
+ 
+                     <div class="col-lg-2  offset-lg-5 mb30 wow fadeInRight">
+                         <a class=" btn-custom scroll-to wow fadeInUp" data-wow-delay=".5s" @click="click4()">主要简历</a>
+                     </div>
+                 </div>
+             </div>
+         </section>
+ 
+ 
+         <section  id="section-career" style="display:none;" class="no-bg">
+             <div class="container">
+                 <div class="row">
+                     <div class="col-lg-6 offset-lg-3">
+                         <div class="text-center">
+                             <h2 style="color:lightseagreen" data-wow-delay=".2s">主要简历</h2>
+                             <p></p>
+                         </div>
+                     </div>
+                 </div>
+ 
+                 <div class="col-md-12 ">
+                     <div class="field-set">
+                         <h4 align="center" style="color:lightseagreen" class="wow fadeInUp" data-wow-delay=".4s"> 小学  </h4>
+                         <p align="center">2003年9月-2009年7月；就读于盘州市石桥镇威箐小学</p>
+                     </div>
+                 </div>
+ 
+                 <div class="field-set">
+                     <h4 align="center" style="color:lightseagreen" class="wow fadeInUp" data-wow-delay=".4s"> 初中  </h4>
+                     <p align="center">2009年9月-2012年7月；就读于盘州市石桥镇乐民第二中学</p>
+                 </div>
+ 
+                 <div class="field-set">
+                     <h4 align="center" style="color:lightseagreen" class="wow fadeInUp" data-wow-delay=".4s"> 高中  </h4>
+                     <p align="center">2012年9月-2015年7月；就读于盘州市第一中学</p>
+                 </div>
+ 
+                 <div class="field-set">
+                     <h4 align="center" style="color:lightseagreen" class="wow fadeInUp" data-wow-delay=".4s"> 本科  </h4>
+                     <p align="center">2015年9月-2019年7月；就读贵州大学机械工程学院，机械设计制造及其自动化专业</p>
+                 </div>
+                 <div class="field-set">
+                     <h4 align="center" style="color:lightseagreen" class="wow fadeInUp" data-wow-delay=".4s"> 硕士 </h4>
+                     <p align="center">2019年9月-2022年7月；推免于贵州大学机械工程学院，机械制造及其自动化专业</p>
+                     <div class="row">
+                         <p></p>
+                     </div>
+                     <div class="row">
+ 
+                         <div class="col-lg-2  offset-lg-1 mb30 wow fadeInRight">
+                             <a class=" btn-custom scroll-to wow fadeInUp" data-wow-delay=".6s" @click="click3()">个人技能</a>
+                         </div>
+ 
+                         <div class="col-lg-2  offset-lg-5 mb30 wow fadeInRight">
+                             <a class=" btn-custom scroll-to wow fadeInUp" data-wow-delay=".6s" @click="click5()">个人材料</a>
+                         </div>
+                     </div>
+                 </div>
+         </section>
+ 
+ 
+         <section  id="section-experience"  style="display:none;" class="no-bg">
+             <div class="container">
+                 <div class="row">
+                     <div class="col-lg-6 offset-lg-3">
+                         <div class="text-center">
+                             <h2 style="color:lightseagreen" data-wow-delay=".2s">个人材料</h2>
+                             <p>（PS:点击可下载相应的文件）</p>
+                         </div>
+                     </div>
+                 </div>
+ 
+                 <div class="container">
+                     <div class="row">
+                         <div class="col-lg-6 col-md-6 mb30 wow fadeInRight" data-wow-delay="0s">
+                             <div class="f-box f-icon-left f-icon-circle f-border">
+                                 <i class="fa fa-file-powerpoint-o id-color"></i>
+                                 <div class="fb-text">
+                                     <p></p>
+                                     <h2>发表的论文</h2>
+                                     <p></p>
+                                     <p><a download="paper1.pdf" data-wow-delay=".4s" href="static\download\lunwen\1.pdf">①《多轴3D打印技术研究进展》</a></p>
+                                     <p> <a download="paper2.pdf" data-wow-delay=".4s" href="static\download\lunwen\2.pdf">②《4D 打印技术研究与应用进展》</a></p>
+                                     <p> <a download="paper3.pdf" data-wow-delay=".4s" href="static\download\lunwen\3.pdf">③《4D打印复合软材料力学性能研究进展》</a></p>
+                                     <p>
+                                         <a download="paper4.pdf" data-wow-delay=".4s" href="static\download\lunwen\4.pdf">④《A non‑supporting printing algorithm for fused filament fabrication of multi‑branch structure》</a>
+                                     </p>
+                                 </div>
+                             </div>
+ 
+                             <div class="f-box f-icon-left f-icon-circle f-border">
+                                 <i class="fa fa-dribbble id-color"></i>
+                                 <div class="fb-text">
+                                     <p></p>
+                                     <h2>竞赛证书</h2>
+                                     <p></p>
+                                     <p><a download="competition1.pdf" data-wow-delay=".4s" href="static\download\jingsai\1.pdf">①《第十二届挑战杯中国大学生创业计划竞赛优秀奖》</a></p>
+                                     <p> <a download="competition2.pdf" data-wow-delay=".4s" href="static\download\jingsai\2.pdf">②《第二届双创杯数学竞赛优秀工作者》</a></p>
+                                 </div>
+                             </div>
+                         </div>
+ 
+                         <div class="col-lg-6 col-md-6 mb30 wow fadeInRight" data-wow-delay=".25s">
+                             <div class=" f-box f-icon-left f-icon-circle f-border">
+                                 <i class="fa fa-pinterest-p id-color"></i>
+                                 <div class="fb-text">
+                                     <p></p>
+                                     <h2>专利证书</h2>
+                                     <p></p>
+                                     <p><a download="patent1.pdf" data-wow-delay=".4s" href="static\download\zhuanli\1.pdf">① 《一种能简化建模过程的3D打印装置》</a></p>
+                                     <p> <a download="patent2.pdf" data-wow-delay=".4s" href="static\download\zhuanli\2.pdf">②《一种能简化建模过程的3D打印装置用工作台》</a></p>
+                                     <p> <a download="patent3.pdf" data-wow-delay=".4s" href="static\download\zhuanli\3.pdf">③《一种立铣刀刀径测量装置》</a></p>
+                                     <div class="row">
+                                         <p></p>
+                                     </div>
+ 
+                                     <div class="row">
+                                         <p></p>
+                                     </div>
+                                     <div class="row">
+                                         <p></p>
+                                     </div>
+ 
+                                     <div class="row">
+                                         <p></p>
+                                     </div>
+ 
+                                 </div>
+                             </div>
+ 
+                             <div class=" f-box f-icon-left f-icon-circle f-border">
+                                 <i class="fa fa-trophy id-color"></i>
+                                 <div class="fb-text">
+                                     <p></p>
+                                     <h2>荣誉证书</h2>
+                                     <p></p>
+                                     <p><a download="honor1.pdf" data-wow-delay=".4s" href="static\download\rongyi\1.pdf">① 《校级二等奖奖学金》</a></p>
+                                     <p> <a download="honor2.pdf" data-wow-delay=".4s" href="static\download\rongyi\1.pdf">②《校级三等奖奖学金》</a></p>
+                                     <p> <a download="honor3.pdf" data-wow-delay=".4s" href="static\download\rongyi\3.pdf">③《全国计算机等级二级证书》</a></p>
+                                 </div>
+                             </div>
+ 
+                         </div>
+ 
+                     </div>
+ 
+                     <div class="row">
+                         <div class="col-lg-2 offset-lg-3 mb30 wow fadeInRight">
+                             <a download="introduce.pdf" data-wow-delay=".4s" href="static\download\TPF.pdf"><u>附件1：   个人简历</u></a>
+                         </div>
+                         <div class="col-lg-3 offset-lg-2 mb30 wow fadeInRight">
+                             <a download="Thesis.pdf" data-wow-delay=".4s" href="static\download\2.pdf"><u>附件2：  硕士论文摘要</u></a>
+                         </div>
+                     </div>
+ 
+                     <div class="row">
+ 
+                         <div class="col-lg-2  offset-lg-1 mb30 wow fadeInRight">
+                             <a class=" btn-custom scroll-to wow fadeInUp" data-wow-delay=".6s" @click="click4()">主要简历</a>
+                         </div>
+ 
+                         <div class="col-lg-2  offset-lg-5 mb30 wow fadeInRight">
+                             <a class=" btn-custom scroll-to wow fadeInUp" data-wow-delay=".6s" @click="click6()">联系方式</a>
+                         </div>
+                     </div>
+ 
+                 </div>
+             </div>
+         </section>
+ 
+ 
+         <section  id="section-contact"  style="display:none;" class="no-bg">
+             <div class="container">
+                 <div class="row">
+                     <div class="col-lg-12 offset-lg-4 ">
+ 
+                         <h2 style="color:lightseagreen" data-wow-delay=".5s">联系方式</h2>
+ 
+                     </div>
+ 
+                 </div>
+                 <div class="spacer-single"></div>
+                 <div class="spacer-single"></div>
+                 <form name="contactForm" id="contact_form" class="row form-default" method="post" action="email.php">
+                     <div class="col-md-6">
+                         <div class="field-set">
+                             <div class="social-icons">
+                                 <p class="fa fa-address-book id-color" data-wow-delay="1s"> &nbsp;&nbsp手机：173****9818</p>
+ 
+                             </div>
+                         </div>
+ 
+                         <div class="field-set">
+                             <p class="fa fa-envelope-square id-color" data-wow-delay="1s"> &nbsp;&nbsp电子邮箱：tpf9527@foxmail.com</p>
+                             <div class="line-fx"></div>
+                         </div>
+ 
+                         <div class="field-set">
+                             <p class="fa fa-weixin id-color" data-wow-delay="1s"> &nbsp;&nbsp微信号：www_pftang_xyz</p>
+                             <div class="line-fx"></div>
+                         </div>
+                         <div class="field-set">
+                             <p class="fa fa-qq id-color" data-wow-delay="1s"> &nbsp;&nbspQQ号：192124974</p>
+                             <div class="line-fx"></div>
+                         </div>
+                     </div>
+ 
+                     <div class="col-md-6">
+                         <div class="field-set">
+                             <h2 align="left" style="color:lightseagreen" class="wow fadeInUp" data-wow-delay=".5s">    PS:  </h2>
+                             <h3 style="text-indent:2em">欢迎电话或邮件联系。所联系的邮件和电话，都会得到回复哦！!</h3>
+                             <div class="line-fx"></div>
+                         </div>
+                     </div>
+ 
+                 </form>
+ 
+ 
+ 
+             </div>
+             <div class=" text-center" style="margin-top: 40px;">
+                 <div class="row">
+                     <div class="col-lg-2  offset-lg-2 mb30 wow fadeInRight">
+                         <a class=" btn-custom scroll-to wow fadeInUp" data-wow-delay=".5s" @click="click5()">个人材料</a>
+                     </div>
+ 
+                     <div class="col-lg-2  offset-lg-5 mb30 wow fadeInRight">
+                         <a class=" btn-custom scroll-to wow fadeInUp" data-wow-delay=".5s" @click="click7()">生活相册</a>
+                     </div>
+                 </div>
+             </div>
+             
+             <footer class="footer" style="margin-top: 40px;">
+                 <div class="container">
+                     <div class="row align-items-center">
+                         <div class="col-md-6 text-md-right text-sm-left">
+                             <div class="social-icons">
+                                 <a href="#"><i class="fa fa-qq fa-lg"></i></a>
+                                 <a href="#"><i class="fa fa-weixin fa-lg"></i></a>
+                                 <a href="#"><i class="fa fa-weibo fa-lg"></i></a>
+                                 <a href="#"><i class="fa fa-internet-explorer fa-lg"></i></a>
+                                 <a href="#"><i class="fa fa-rss fa-lg"></i></a>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </footer>
+ 
+         </section>
+         
+         <section  id="section-life" style="display:none;">
+             <div class="container">
+                 <!-- portfolio filter begin -->
+                 <div class="row">
+                     <div class="col-md-12 text-center">
+                         <h2><span class="id-color">日常生活</span></h2>
+                         <h3>I Love What I Do</h3>
+                     </div>
+     
+                     <div id="gallery" class="gallery full-gallery de-gallery pf_full_width pf_3_cols grid sequence">
+                         <!-- gallery item -->
+                         <div class="item illustration website gallery-item " data-value="project-details-image.html">
+                             <div class="picframe wow">
+                                 <img src="static/picture/0.jpg" alt="" />
+                             </div>
+                         </div>
+                         <!-- close gallery item -->
+                         <!-- gallery item -->
+                         <div class="item photography gallery-item " data-value="project-details-slider.html">
+                             <div class="picframe wow">
+                                 <img src="static/picture/2.jpg" alt="" />
+                             </div>
+                         </div>
+                         <!-- close gallery item -->
+                         <!-- gallery item -->
+                         <div class="item illustration gallery-item" data-value="project-details-youtube.html">
+                             <div class="picframe wow">
+                                 <img src="static/picture/3.jpeg" alt="" />
+                             </div>
+                         </div>
+                         <!-- close gallery item -->
+                         <!-- gallery item -->
+                         <div class="item photography illustration mobile gallery-item " data-value="project-details-image-big.html">
+                             <div class="picframe wow">
+                                 <img src="static/picture/4.jpg" alt="" />
+                             </div>
+                         </div>
+                         <!-- close gallery item -->
+                         <!-- gallery item -->
+                         <div class="item photography mobile website gallery-item " data-value="project-details-slider-big.html">
+                             <div class="picframe wow">
+                                 <img src="static/picture/5.jpg" alt="" />
+                             </div>
+                         </div>
+                         <!-- close gallery item -->
+                         <!-- gallery item -->
+                         <div class="item mobile website gallery-item ">
+                             <div class="picframe wow">
+                                 <img src="static/picture/6.jpg" alt="" />
+                             </div>
+                         </div>
+                         <!-- close gallery item -->
+                     </div>
+                 </div>
+             </div>
+     
+             <div class="container" id="studylife">
+                 <div class="row">
+                     <div class="col-md-12 text-center">
+                         <h2><span class="id-color">科研生活</span></h2>
+                         <h3>Just Do It</h3>
+                     </div>
+     
+                     <div id="gallery" class="gallery full-gallery de-gallery pf_full_width pf_3_cols grid sequence">
+                         <!-- gallery item -->
+                         <div class="item illustration website gallery-item " data-value="project-details-image.html">
+                             <div class="picframe wow">
+                                 <img src="static/picture/7.jpg" alt="" />
+                             </div>
+                         </div>
+                         <!-- close gallery item -->
+                         <!-- gallery item -->
+                         <div class="item photography gallery-item " data-value="project-details-slider.html">
+                             <div class="picframe wow">
+                                 <img src="static/picture/8.jpg" alt="" />
+                             </div>
+                         </div>
+                         <!-- close gallery item -->
+                         <!-- gallery item -->
+                         <div class="item illustration gallery-item" data-value="project-details-youtube.html">
+                             <div class="picframe wow">
+                                 <img src="static/picture/9.jpg" alt="" />
+                             </div>
+                         </div>
+                         <!-- close gallery item -->
+                         <!-- gallery item -->
+                         <div class="item photography illustration mobile gallery-item " data-value="project-details-image-big.html">
+                             <div class="picframe wow">
+                                 <img src="static/picture/10.jpg" alt="" />
+                             </div>
+                         </div>
+                         <!-- close gallery item -->
+                         <!-- gallery item -->
+                         <div class="item photography mobile website gallery-item " data-value="project-details-slider-big.html">
+                             <div class="picframe wow">
+                                 <img src="static/picture/11.jpg" alt="" />
+                             </div>
+                         </div>
+                         <!-- close gallery item -->
+                         <!-- gallery item -->
+                         <div class="item mobile website gallery-item ">
+                             <div class="picframe wow">
+                                 <img src="static/picture/12.jpg" alt="" />
+                             </div>
+                         </div>
+                         <div class="col-lg-2 offset-lg-5 mb30 wow fadeInRight">
+                             <div class="spacer-single"></div>
+                             <a class=" btn-custom scroll-to wow fadeInUp" data-wow-delay=".5s" @click="click1()">返回主页</a>
+                         </div>
+                         <!-- close gallery item -->
+                     </div>
+                 </div>
+     
+             </div>
+ 
+         </section>
+  
+ 
+     </div>
+     <!-- Javascript Files
+     ================================================== -->
+     <!-- 引入组件库 -->
+ <!-- 引入Vue -->
+     <script src="./static/js/vue.js"></script>
+     <script src="./static/js/jquery.min.js"></script>
+     <script src="./static/js/bootstrap.min.js"></script>
+     <script src="./static/js/wow.min.js"></script>
+     <script src="./static/js/jquery.isotope.min.js"></script>
+     <script src="./static/js/easing.js"></script>
+     <script src="./static/js/owl.carousel.js"></script>
+     <script src="./static/js/validation.js"></script>
+     <script src="./static/js/jquery.magnific-popup.min.js"></script>
+     <script src="./static/js/enquire.min.js"></script>
+     <script src="./static/js/jquery.stellar.min.js"></script>
+     <script src="./static/js/jquery.plugin.js"></script>
+     <script src="./static/js/typed.js"></script>
+     <script src="./static/js/jquery.countto.js"></script>
+     <script src="./static/js/jquery.countdown.js"></script>
+     <script src="./static/js/designesia.js"></script>
+    
+ 
+ </body>
+ 
+ <script>
+     var vue=new Vue({
+         el:'#webapp',
+         data:{
+  
+         },
+ 
+         created(){
+             console.log('init...')
+             console.log('init finish',this.id1.style.display)
+ 
+         },
+ 
+         methods:{
+ 
+             click1(){
+                 
+                 console.log('click1()')
+                var id1=document.getElementById("section-index")
+                var id2=document.getElementById("section-about")
+                var id3=document.getElementById("section-skill")
+                var id4=document.getElementById("section-career")
+                var id5=document.getElementById("section-experience")
+                var id6=document.getElementById("section-contact")
+                var id7=document.getElementById("section-life")
+                  id1.style.display='block';
+                  id2.style.display='none';
+                  id3.style.display='none';
+                  id4.style.display='none';
+                  id5.style.display='none';
+                  id6.style.display='none';
+                  id7.style.display='none';
+ 
+             },
+ 
+             click2(){
+                 var id1=document.getElementById("section-index")
+                var id2=document.getElementById("section-about")
+                var id3=document.getElementById("section-skill")
+                var id4=document.getElementById("section-career")
+                var id5=document.getElementById("section-experience")
+                var id6=document.getElementById("section-contact")
+                var id7=document.getElementById("section-life")
+                  id1.style.display='none';
+                  id2.style.display='block';
+                  id3.style.display='none';
+                  id4.style.display='none';
+                  id5.style.display='none';
+                  id6.style.display='none';
+                  id7.style.display='none';
+                 console.log(' id2.style.display',  id2.style.display)
+             },
+ 
+             click3(){
+                 var id1=document.getElementById("section-index")
+                var id2=document.getElementById("section-about")
+                var id3=document.getElementById("section-skill")
+                var id4=document.getElementById("section-career")
+                var id5=document.getElementById("section-experience")
+                var id6=document.getElementById("section-contact")
+                var id7=document.getElementById("section-life")
+                  id1.style.display='none';
+                  id2.style.display='none';
+                  id3.style.display='block';
+                  id4.style.display='none';
+                  id5.style.display='none';
+                  id6.style.display='none';
+                  id7.style.display='none';
+             },
+             click4(){
+                 var id1=document.getElementById("section-index")
+                var id2=document.getElementById("section-about")
+                var id3=document.getElementById("section-skill")
+                var id4=document.getElementById("section-career")
+                var id5=document.getElementById("section-experience")
+                var id6=document.getElementById("section-contact")
+                var id7=document.getElementById("section-life")
+                  id1.style.display='none';
+                  id2.style.display='none';
+                  id3.style.display='none';
+                  id4.style.display='block';
+                  id5.style.display='none';
+                  id6.style.display='none';
+                  id7.style.display='none';
+             },
+             click5(){
+                 var id1=document.getElementById("section-index")
+                var id2=document.getElementById("section-about")
+                var id3=document.getElementById("section-skill")
+                var id4=document.getElementById("section-career")
+                var id5=document.getElementById("section-experience")
+                var id6=document.getElementById("section-contact")
+                var id7=document.getElementById("section-life")
+                  id1.style.display='none';
+                  id2.style.display='none';
+                  id3.style.display='none';
+                  id4.style.display='none';
+                  id5.style.display='block';
+                  id6.style.display='none';
+                  id7.style.display='none';
+             },
+             click6(){
+                 var id1=document.getElementById("section-index")
+                var id2=document.getElementById("section-about")
+                var id3=document.getElementById("section-skill")
+                var id4=document.getElementById("section-career")
+                var id5=document.getElementById("section-experience")
+                var id6=document.getElementById("section-contact")
+                var id7=document.getElementById("section-life")
+                  id1.style.display='none';
+                  id2.style.display='none';
+                  id3.style.display='none';
+                  id4.style.display='none';
+                  id5.style.display='none';
+                  id6.style.display='block';
+                  id7.style.display='none';
+             },
+             click7(){
+                 var id1=document.getElementById("section-index")
+                var id2=document.getElementById("section-about")
+                var id3=document.getElementById("section-skill")
+                var id4=document.getElementById("section-career")
+                var id5=document.getElementById("section-experience")
+                var id6=document.getElementById("section-contact")
+                var id7=document.getElementById("section-life")
+                  id1.style.display='none';
+                  id2.style.display='none';
+                  id3.style.display='none';
+                  id4.style.display='none';
+                  id5.style.display='none';
+                  id6.style.display='none';
+                  id7.style.display='block';
+             }
+ 
+         }
+ 
+ 
+     })
+ </script>
+ 
+ 
+ </html>
+ 
