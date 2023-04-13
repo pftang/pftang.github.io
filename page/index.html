@@ -88,9 +88,6 @@
                                      <li><a href="#section-experience" style="color:lightseagreen" @click="click5()">个人材料</a></li>
                                      <li></li>
                                      <li><a href="#section-contact" style="color:lightseagreen" @click="click6()">联系方式</a></li>
-                                     <li></li>
-                                     <li><a href="#section-life" style="color:lightseagreen" @click="click7()">生活相册</a></li>
-                                     <li></li>
                                  </ul>
  
                                  <!-- mainmenu close -->
@@ -499,7 +496,7 @@
                      </div>
  
                      <div class="col-lg-2  offset-lg-5 mb30 wow fadeInRight">
-                         <a class=" btn-custom scroll-to wow fadeInUp" data-wow-delay=".5s" @click="click7()">生活相册</a>
+                             <a class=" btn-custom scroll-to wow fadeInUp" data-wow-delay=".5s" @click="click1()">返回主页</a>
                      </div>
                  </div>
              </div>
@@ -521,126 +518,7 @@
              </footer>
  
          </section>
-         
-         <section  id="section-life" style="display:none;">
-             <div class="container">
-                 <!-- portfolio filter begin -->
-                 <div class="row">
-                     <div class="col-md-12 text-center">
-                         <h2><span class="id-color">日常生活</span></h2>
-                         <h3>I Love What I Do</h3>
-                     </div>
-     
-                     <div id="gallery" class="gallery full-gallery de-gallery pf_full_width pf_3_cols grid sequence">
-                         <!-- gallery item -->
-                         <div class="item illustration website gallery-item " data-value="project-details-image.html">
-                             <div class="picframe wow">
-                                 <img src="static/picture/0.jpg" alt="" />
-                             </div>
-                         </div>
-                         <!-- close gallery item -->
-                         <!-- gallery item -->
-                         <div class="item photography gallery-item " data-value="project-details-slider.html">
-                             <div class="picframe wow">
-                                 <img src="static/picture/2.jpg" alt="" />
-                             </div>
-                         </div>
-                         <!-- close gallery item -->
-                         <!-- gallery item -->
-                         <div class="item illustration gallery-item" data-value="project-details-youtube.html">
-                             <div class="picframe wow">
-                                 <img src="static/picture/3.jpeg" alt="" />
-                             </div>
-                         </div>
-                         <!-- close gallery item -->
-                         <!-- gallery item -->
-                         <div class="item photography illustration mobile gallery-item " data-value="project-details-image-big.html">
-                             <div class="picframe wow">
-                                 <img src="static/picture/4.jpg" alt="" />
-                             </div>
-                         </div>
-                         <!-- close gallery item -->
-                         <!-- gallery item -->
-                         <div class="item photography mobile website gallery-item " data-value="project-details-slider-big.html">
-                             <div class="picframe wow">
-                                 <img src="static/picture/5.jpg" alt="" />
-                             </div>
-                         </div>
-                         <!-- close gallery item -->
-                         <!-- gallery item -->
-                         <div class="item mobile website gallery-item ">
-                             <div class="picframe wow">
-                                 <img src="static/picture/6.jpg" alt="" />
-                             </div>
-                         </div>
-                         <!-- close gallery item -->
-                     </div>
-                 </div>
-             </div>
-     
-             <div class="container" id="studylife">
-                 <div class="row">
-                     <div class="col-md-12 text-center">
-                         <h2><span class="id-color">科研生活</span></h2>
-                         <h3>Just Do It</h3>
-                     </div>
-     
-                     <div id="gallery" class="gallery full-gallery de-gallery pf_full_width pf_3_cols grid sequence">
-                         <!-- gallery item -->
-                         <div class="item illustration website gallery-item " data-value="project-details-image.html">
-                             <div class="picframe wow">
-                                 <img src="static/picture/7.jpg" alt="" />
-                             </div>
-                         </div>
-                         <!-- close gallery item -->
-                         <!-- gallery item -->
-                         <div class="item photography gallery-item " data-value="project-details-slider.html">
-                             <div class="picframe wow">
-                                 <img src="static/picture/8.jpg" alt="" />
-                             </div>
-                         </div>
-                         <!-- close gallery item -->
-                         <!-- gallery item -->
-                         <div class="item illustration gallery-item" data-value="project-details-youtube.html">
-                             <div class="picframe wow">
-                                 <img src="static/picture/9.jpg" alt="" />
-                             </div>
-                         </div>
-                         <!-- close gallery item -->
-                         <!-- gallery item -->
-                         <div class="item photography illustration mobile gallery-item " data-value="project-details-image-big.html">
-                             <div class="picframe wow">
-                                 <img src="static/picture/10.jpg" alt="" />
-                             </div>
-                         </div>
-                         <!-- close gallery item -->
-                         <!-- gallery item -->
-                         <div class="item photography mobile website gallery-item " data-value="project-details-slider-big.html">
-                             <div class="picframe wow">
-                                 <img src="static/picture/11.jpg" alt="" />
-                             </div>
-                         </div>
-                         <!-- close gallery item -->
-                         <!-- gallery item -->
-                         <div class="item mobile website gallery-item ">
-                             <div class="picframe wow">
-                                 <img src="static/picture/12.jpg" alt="" />
-                             </div>
-                         </div>
-                         <div class="col-lg-2 offset-lg-5 mb30 wow fadeInRight">
-                             <div class="spacer-single"></div>
-                             <a class=" btn-custom scroll-to wow fadeInUp" data-wow-delay=".5s" @click="click1()">返回主页</a>
-                         </div>
-                         <!-- close gallery item -->
-                     </div>
-                 </div>
-     
-             </div>
- 
-         </section>
-  
- 
-     </div>
+       </div>
      <!-- Javascript Files
      ================================================== -->
      <!-- 引入组件库 -->
@@ -781,22 +659,6 @@
                   id5.style.display='none';
                   id6.style.display='block';
                   id7.style.display='none';
-             },
-             click7(){
-                 var id1=document.getElementById("section-index")
-                var id2=document.getElementById("section-about")
-                var id3=document.getElementById("section-skill")
-                var id4=document.getElementById("section-career")
-                var id5=document.getElementById("section-experience")
-                var id6=document.getElementById("section-contact")
-                var id7=document.getElementById("section-life")
-                  id1.style.display='none';
-                  id2.style.display='none';
-                  id3.style.display='none';
-                  id4.style.display='none';
-                  id5.style.display='none';
-                  id6.style.display='none';
-                  id7.style.display='block';
              }
  
          }
